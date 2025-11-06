@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OpenCart1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginTest(failed)">
+    <groups>
+      <run>
+        <include name="login Error Validation"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.openCartTest.com.LaunchLoginTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+          <include name="loginAlertTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.openCartTest.com.LaunchLoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [OpenCart1] -->
